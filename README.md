@@ -1,15 +1,11 @@
-# test-bun
+# bun-add-bug
 
-To install dependencies:
-
-```bash
-bun install
-```
-
-To run:
+To reproduce the bug where the postinstall script does not behave like `bun install`, run `bun add` in the workspace `package-a`:
 
 ```bash
-bun run index.ts
+bun install # it works fine
+
+cd packages/package-a
+bun add -d react # postinstall scripts cannot be found
 ```
 
-This project was created using `bun init` in bun v1.0.0. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
