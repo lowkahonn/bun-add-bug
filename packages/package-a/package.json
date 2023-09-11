@@ -1,0 +1,14 @@
+{
+  "name": "package-a",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "postinstall": "bash ./script.sh"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
